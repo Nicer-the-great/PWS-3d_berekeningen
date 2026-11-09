@@ -36,14 +36,22 @@ class cartagisch:
     ## b is het punt waar a omheen draait.
     a = cartagisch.aftrek(a, b)
     ## variabelen vooraf uitrekenen zodat de eindberekening niet zo groot wordt:
-    afstand = math.sqrt(a[0], a[1], a[2])
+    afstand = math.sqrt(((a[0])**2) + ((a[1])**2) + ((a[2])**2))
 
     ## wortels berekenen
     sqrt_zy = math.sqrt(((a[1])**2) + ((a[2])**2))
     sqrt_xy = math.sqrt(((a[0])**2) + ((a[1])**2))
     sqrt_xz = math.sqrt(((a[0])**2) + ((a[2])**2))
 
-    ## cosinusen
+    sqrt_vec_xy = math.sqrt(((vector[0])**2) + ((vector[1])**2))
+    sqrt_vec_zy = math.sqrt(((vector[1])**2) + ((vector[2])**2))
+    sqrt_vec_zx = math.sqrt(((vector[0])**2) + ((vector[2])**2))
     
-    Xnieuw =  afstand *  * 
-  
+        
+    ## cosinus
+    x_cos = math.cos(math.atan(sqrt_zy/a[0]) + Theta)
+    y_cos = math.cos(math.atan(sqrt_xz/a[1]) + Theta)
+    z_cos = math.cos(math.atan(sqrt_xy/a[2]) + Theta)
+    
+    ## sinussen
+    x_sin = math.sin()
