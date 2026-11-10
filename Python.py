@@ -49,9 +49,19 @@ class cartagisch:
     
         
     ## cosinus
-    x_cos = math.cos(math.atan(sqrt_zy/a[0]) + Theta)
-    y_cos = math.cos(math.atan(sqrt_xz/a[1]) + Theta)
-    z_cos = math.cos(math.atan(sqrt_xy/a[2]) + Theta)
+    x_cos = math.cos(math.atan2(sqrt_zy, a[0]) + Theta)
+    y_cos = math.cos(math.atan2(sqrt_xz, a[1]) + Theta)
+    z_cos = math.cos(math.atan2(sqrt_xy, a[2]) + Theta)
     
     ## sinussen
-    x_sin = math.sin()
+    x_sin = math.sin(math.atan2(vector[0], sqrt_vec_zy))
+    y_sin = math.sin(math.atan2(vector[1], sqrt_vec_zx))
+    z_sin = math.sin(math.atan2(vector[2], sqrt_vec_xy))
+
+    ## alles keer elkaar:
+    Xnieuw = afstand * x_cos * x_sin
+    Ynieuw = afstand * y_cos * y_sin
+    Znieuw = afstand * z_cos * z_sin
+
+    ## teruggeven juiste waarde
+    return [Xnieuw + b[0] , Ynieuw + b[1] , Znieuw + b[2]]
