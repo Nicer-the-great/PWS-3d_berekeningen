@@ -65,3 +65,9 @@ class cartagisch:
 
     ## teruggeven juiste waarde
     return [Xnieuw + b[0] , Ynieuw + b[1] , Znieuw + b[2]]
+
+class bolcoördinaten:
+
+  @staticmethod 
+  def projectie(a, b, ThetaX, ThetaY) :
+    
