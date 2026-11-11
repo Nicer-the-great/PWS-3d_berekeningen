@@ -70,16 +70,20 @@ class bolcoördinaten:
 
   @staticmethod 
   def projectie(a, b, ThetaX, ThetaY) :
-    ## b is het nulpunt.
-    ## notatie binnen deze fucntie is [r, ThetaX, ThetaY]
+    ## b is het nulpunt en notatie binnen deze fucntie is [r, ThetaX, ThetaY]
     
-    
+    ## berekenen van deltaX en deltaY
+    rxa = math.cos(a[2]) * a[0]
+    rya = math.sin(a[2]) * a[0]
+
+    rxb =  math.cos(b[2]) * b[0]
+    ryb =  math.sin(b[2]) * b[0]
 
     ## we nemen de verschillen tussen de hoeken
     dThetaX = a[1] - b[1]
     dThetaY = a[2] - b[2]
 
-    ## we rekenen hier nu de cosinusregels uit
+    ## we rekenen hier nu de cosinusregels uit voor de afstandstandverschil in een X en Y
 
-   dX = math.sqrt( ((a[0])**2) + ((b[0])**2) - (2** (  )) )
+   dX = math.sqrt(  )
    dY =
