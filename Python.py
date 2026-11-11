@@ -70,4 +70,6 @@ class bolcoördinaten:
 
   @staticmethod 
   def projectie(a, b, ThetaX, ThetaY) :
+    ## b is het nulpunt.
+    ## notatie binnen deze fucntie is [r, ThetaX, ThetaY]
     
