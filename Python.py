@@ -73,3 +73,13 @@ class bolcoördinaten:
     ## b is het nulpunt.
     ## notatie binnen deze fucntie is [r, ThetaX, ThetaY]
     
+    
+
+    ## we nemen de verschillen tussen de hoeken
+    dThetaX = a[1] - b[1]
+    dThetaY = a[2] - b[2]
+
+    ## we rekenen hier nu de cosinusregels uit
+
+   dX = math.sqrt( ((a[0])**2) + ((b[0])**2) - (2** (  )) )
+   dY =
