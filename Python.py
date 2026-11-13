@@ -73,7 +73,7 @@ class bolcoördinaten:
     ## b is het nulpunt en notatie binnen deze fucntie is [r, ThetaX, ThetaY]
     
     ## berekenen van deltaX en deltaY
-    rxa = math.cos(a[2]) * a[0]
+    rxa = math.cos(a[2]) * a[0] 
     rya = math.sin(a[2]) * a[0]
 
     rxb =  math.cos(b[2]) * b[0]
@@ -85,5 +85,5 @@ class bolcoördinaten:
 
     ## we rekenen hier nu de cosinusregels uit voor de afstandstandverschil in een X en Y
 
-   dX = math.sqrt(  )
+   dX = math.sqrt( ((rxa)**2) + ((rxb)**2) - (2* rxa * rxb * math.cos(dThetaX))  )
    dY =
