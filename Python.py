@@ -86,7 +86,7 @@ class bolcoördinaten:
     ## we rekenen hier nu de cosinusregels uit voor de afstandstandverschil in een X en Y
 
    dX = math.sqrt( ((rxa)**2) + ((rxb)**2) - (2* rxa * rxb * math.cos(dThetaX))  )
-   dY = math.sqrt( ((rya)**2) + ((ryb)**2) - (2* rya * ryb * math.cos(dThetaY))  )
+   dY = rya - ryb
 
    ## nu rekenen we het afstandsverschil tussen de twee punten uit met de stelling van pytagoras:
 
