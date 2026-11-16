@@ -90,4 +90,16 @@ class bolcoördinaten:
 
    ## nu rekenen we het afstandsverschil tussen de twee punten uit met de stelling van pytagoras:
 
-   R = math.sqrt()
+   R = math.sqrt(((dX)**2) + ((dY)**2))
+
+   ## nu rekenen we de nieuwe dTheta-waardes uit.
+
+   tX = ((math.pi / 2) - dThetaX) + math.atan2((rxb - (math.cos(dThetaX) * rxa) ),(math.sin(dThetaX) * rxa ))
+   tY = ((math.pi / 2) - dThetaY) + math.atan2((ryb - (math.cos(dThetaY) * rya) ),(math.sin(dThetaY) * rya ))
+
+   ## nu tellen we de dTheta waardes op bij de originele ThetaX en ThetaY
+
+   tX = tX + b[1] - ThetaX
+   tY = tY + b[2] - ThetaY
+   
+   return [R, tX, tY]
