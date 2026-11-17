@@ -85,21 +85,21 @@ class bolcoördinaten:
 
     ## we rekenen hier nu de cosinusregels uit voor de afstandstandverschil in een X en Y
 
-   dX = math.sqrt( ((rxa)**2) + ((rxb)**2) - (2* rxa * rxb * math.cos(dThetaX))  )
-   dY = rya - ryb
+    dX = math.sqrt( ((rxa)**2) + ((rxb)**2) - (2* rxa * rxb * math.cos(dThetaX))  )
+    dY = rya - ryb
 
-   ## nu rekenen we het afstandsverschil tussen de twee punten uit met de stelling van pytagoras:
+    ## nu rekenen we het afstandsverschil tussen de twee punten uit met de stelling van pytagoras:
 
-   R = math.sqrt(((dX)**2) + ((dY)**2))
+    R = math.sqrt(((dX)**2) + ((dY)**2))
 
-   ## nu rekenen we de nieuwe dTheta-waardes uit.
+    ## nu rekenen we de nieuwe dTheta-waardes uit.
 
-   tX = ((math.pi / 2) - dThetaX) + math.atan2((rxb - (math.cos(dThetaX) * rxa) ),(math.sin(dThetaX) * rxa ))
-   tY = ((math.pi / 2) - dThetaY) + math.atan2((ryb - (math.cos(dThetaY) * rya) ),(math.sin(dThetaY) * rya ))
+    tX = ((math.pi / 2) - dThetaX) + math.atan2((rxb - (math.cos(dThetaX) * rxa) ),(math.sin(dThetaX) * rxa ))
+    tY = 
 
-   ## nu tellen we de dTheta waardes op bij de originele ThetaX en ThetaY
+    ## nu tellen we de dTheta waardes op bij de originele ThetaX en ThetaY
 
-   tX = tX + b[1] - ThetaX
-   tY = tY + b[2] - ThetaY
+    tX = tX + b[1] - ThetaX
+    tY = tY + b[2] - ThetaY
    
-   return [R, tX, tY]
+    return [R, tX, tY]
