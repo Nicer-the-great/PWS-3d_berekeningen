@@ -95,7 +95,7 @@ class bolcoördinaten:
     ## nu rekenen we de nieuwe dTheta-waardes uit.
 
     tX = ((math.pi / 2) - dThetaX) + math.atan2((rxb - (math.cos(dThetaX) * rxa) ),(math.sin(dThetaX) * rxa ))
-    tY = 
+    tY = math.atan( dY / dX )
 
     ## nu tellen we de dTheta waardes op bij de originele ThetaX en ThetaY
 
