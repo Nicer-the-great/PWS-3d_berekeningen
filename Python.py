@@ -110,12 +110,13 @@ class bolcoordinaten:
 
 def test_projectie(aantal_keer):
   begin_tijd = time.time()
+  i = 0
   while i < aantal_keer :
 
     ## deze code zit in beide testfuncties om documentatieverschillen geen impact te laten hebben.
     i = i + 1
-    a = [random.random(), random.random(), random.random]
-    b = [random.random(), random.random(), random.random]
+    a = [random.random(), random.random(), random.random()]
+    b = [random.random(), random.random(), random.random()]
     ThetaX = random.random()
     ThetaY = random.random()
 
@@ -125,11 +126,12 @@ def test_projectie(aantal_keer):
   return eind_tijd
 def test_projectie2(aantal_keer):
   begin_tijd = time.time() 
+  i = 0
   while i < aantal_keer :
 
         i = i + 1
-        a = [random.random(), random.random(), random.random]
-        b = [random.random(), random.random(), random.random]
+        a = [random.random(), random.random(), random.random()]
+        b = [random.random(), random.random(), random.random()]
         ThetaX = random.random()
         ThetaY = random.random()
 
