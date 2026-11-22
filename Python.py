@@ -69,7 +69,7 @@ class cartagisch:
     ## teruggeven juiste waarde
     return [Xnieuw + b[0] , Ynieuw + b[1] , Znieuw + b[2]]
 
-class bolcoördinaten:
+class bolcoordinaten:
 
   @staticmethod 
   def projectie(a, b, ThetaX, ThetaY) :
@@ -111,5 +111,28 @@ class bolcoördinaten:
 def test_projectie(aantal_keer):
   begin_tijd = time.time()
   while i < aantal_keer :
-    a = []
-  
+
+    ## deze code zit in beide testfuncties om documentatieverschillen geen impact te laten hebben.
+    i = i + 1
+    a = [random.random(), random.random(), random.random]
+    b = [random.random(), random.random(), random.random]
+    ThetaX = random.random()
+    ThetaY = random.random()
+
+
+    bolcoordinaten.projectie(a, b, ThetaX, ThetaY)
+  eind_tijd = time.time() - begin_tijd
+  return eind_tijd
+def test_projectie2(aantal_keer):
+  begin_tijd = time.time() 
+  while i < aantal_keer :
+
+        i = i + 1
+        a = [random.random(), random.random(), random.random]
+        b = [random.random(), random.random(), random.random]
+        ThetaX = random.random()
+        ThetaY = random.random()
+
+        cartagisch.projectie(a,b,ThetaX,ThetaY)
+  eind_tijd = time.time() - begin_tijd
+  return eind_tijd
