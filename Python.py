@@ -136,3 +136,7 @@ def test_projectie2(aantal_keer):
         cartagisch.projectie(a,b,ThetaX,ThetaY)
   eind_tijd = time.time() - begin_tijd
   return eind_tijd
+
+
+print(test_projectie(2))
+print(test_projectie2(2))
