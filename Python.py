@@ -1,6 +1,9 @@
 ## dit moet nu een python bestand zijn.
 
 import math
+import random
+import time
+
 
 class cartagisch:
   @staticmethod
@@ -103,3 +106,10 @@ class bolcoördinaten:
     tY = tY + b[2] - ThetaY
    
     return [R, tX, tY]
+
+
+def test_projectie(aantal_keer):
+  begin_tijd = time.time()
+  while i < aantal_keer :
+    a = []
+  
