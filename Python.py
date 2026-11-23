@@ -84,7 +84,6 @@ class bolcoordinaten:
 
     ## we nemen de verschillen tussen de hoeken
     dThetaX = a[1] - b[1]
-    dThetaY = a[2] - b[2]
 
     ## we rekenen hier nu de cosinusregels uit voor de afstandstandverschil in een X en Y
 
