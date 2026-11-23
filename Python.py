@@ -138,6 +138,14 @@ def test_projectie2(aantal_keer):
   eind_tijd = time.time() - begin_tijd
   return eind_tijd
 
-
-print(test_projectie(2))
-print(test_projectie2(2))
+hoevaak = int(input())
+bah = 0
+print("Bolcordinaten")
+while bah < hoevaak :
+  bah = bah + 1
+  print(test_projectie(100000))
+bah = 0
+print("cartagische coordinaten")
+while bah < hoevaak :
+  bah = bah + 1
+  print(test_projectie2(100000))
