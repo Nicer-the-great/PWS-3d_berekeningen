@@ -138,6 +138,8 @@ def test_projectie2(aantal_keer):
   eind_tijd = time.time() - begin_tijd
   return eind_tijd
 
+## test2 is cartagisch en test is gedaan met bolcoördinaten
+
 hoevaak = int(input())
 bah = 0
 print("Bolcordinaten")
